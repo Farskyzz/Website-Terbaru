@@ -43,6 +43,10 @@ main {
   padding: 20px;
 }
 
+section {
+  margin-bottom: 70px;
+}
+
 .card-container {
   display: flex;
   justify-content: space-around;
@@ -57,7 +61,7 @@ main {
   padding: 20px;
   width: 300px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   color: black;
 }
@@ -65,4 +69,76 @@ main {
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card.clicked {
+  animation: clickAnimation 0.5s ease forwards;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#kontak {
+  padding: 20px;
+  background: #f4f4f4;
+  margin-top: 20px;
+}
+
+#kontak h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+#contact-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contact-form button:hover {
+  background: #2980b9;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #34495e;
+  color: white;
 }
