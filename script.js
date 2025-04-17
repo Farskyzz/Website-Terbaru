@@ -33,3 +33,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Menambahkan animasi klik pada kartu layanan
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', function (e) {
+    e.preventDefault();
+    card.classList.add('clicked'); // Tambahkan kelas animasi
+    setTimeout(() => {
+      card.classList.remove('clicked'); // Hapus kelas animasi setelah selesai
+      window.location.href = card.href; // Arahkan ke halaman terkait
+    }, 500); // Durasi animasi sesuai dengan CSS (0.5s)
+  });
+});
