@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Islami Modern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: #ecf0f1;
+      border: 1px solid #bdc3c7;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Selamat Datang di Website Islami</h1>
+    <p>Menyelami Keindahan dan Kedamaian Ajaran Islam</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#tentang">Tentang Kami</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="layanan">
+      <h2>Layanan Kami</h2>
+      <div class="card-container">
+        <!-- Tautan ke Halaman Pendidikan Islam -->
+        <a href="./pendidikan-islam.html" class="card">
+          <h3>Pendidikan Islam</h3>
+          <p>Klik untuk informasi lebih lanjut tentang Pendidikan Islam.</p>
+        </a>
+        <!-- Tautan ke Halaman Acara Komunitas -->
+        <a href="./acara-komunitas.html" class="card">
+          <h3>Acara Komunitas</h3>
+          <p>Klik untuk informasi lebih lanjut tentang Acara Komunitas.</p>
+        </a>
+        <!-- Tautan ke Halaman Program Amal -->
+        <a href="./program-amal.html" class="card">
+          <h3>Program Amal</h3>
+          <p>Klik untuk informasi lebih lanjut tentang Program Amal.</p>
+        </a>
+      </div>
+    </section>
+    <section id="tentang">
+      <h2>Tentang Kami</h2>
+      <p>Kami adalah komunitas yang berkomitmen untuk menyebarkan nilai-nilai Islam dengan cara yang modern dan relevan untuk masyarakat saat ini.</p>
+    </section>
+    <section id="kontak">
+      <h2>Kontak Kami</h2>
+      <form id="contact-form">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Website Islami Modern. Semua hak dilindungi.</p>
+  </footer>
+</body>
+</html>
